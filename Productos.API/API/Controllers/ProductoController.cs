@@ -38,7 +38,7 @@ namespace API.Controllers
             return NoContent();
         }
 
-        [HttpGet("ObtenerTodos")]
+        [HttpGet]
         public async Task<IActionResult> Obtener()
         {
             var resultado = await _productoFlujo.Obtener();
