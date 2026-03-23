@@ -28,6 +28,8 @@ namespace API.Controllers
         [HttpPut("{Id}")]
         public async Task<IActionResult> Editar([FromRoute] Guid Id, [FromBody] ProductoRequest producto)
         {
+            Console.WriteLine($">>> IdSubCategoria recibido: '{producto.IdSubCategoria}'");
+
             var resultado = await _productoFlujo.Editar(Id, producto);
             return Ok(resultado);
         }

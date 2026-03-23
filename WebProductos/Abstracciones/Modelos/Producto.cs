@@ -27,14 +27,14 @@ namespace Abstracciones.Modelos
 
     public class ProductoRequest : ProductoBase
     {
-        public Guid IdSubCategoria { get; set; }
+        public Guid? IdSubCategoria { get; set; }
     }
 
     public class ProductoResponse : ProductoBase
     {
         public Guid Id { get; set; }
-        public string? SubCategoria { get; set; }
-        public string? Categoria { get; set; }
+        public string? Subcategoria { get; set; }
+        public  string? Categoria { get; set; }
     }
 
     public class ProductoDetalle : ProductoResponse {
